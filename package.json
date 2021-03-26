@@ -1,0 +1,27 @@
+{
+  "name": "jobsCalc",
+  "version": "1.0.0",
+  "description": "JobsCalc é uma calculadora que irá ajudar os desenvolvedores freelancers a calcular as despesas de um projeto",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdonoladev/jobsCalc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdonoladev/jobsCalc/issues"
+  },
+  "homepage": "https://github.com/vdonoladev/jobsCalc#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#41414C" />
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <title>JobsCalc</title>
 
     <link rel="stylesheet" href="/styles/main.css" />
@@ -24,7 +24,9 @@
     
   </head>
   <body id="page-profile">
+
     <%- include('parts/page-header', { title: 'Meu Perfil'}) %>
+
 
     <div class="container animate-up delay-2">
       <aside class="card">
@@ -32,13 +34,16 @@
         <h2><%= profile.name %> </h2>
         <p>
           O valor da sua hora é <br/>
-          <strong>R$ 75,00</strong>
+          <strong>R$ <%= profile["value-hour"].toFixed(2).replace(".", ",") %> </strong>
         </p>
         <button class="button green" form="form-profile" type="submit">Salvar dados</button>
       </aside>
       <main>
 
-        <form id="form-profile">
+        <form 
+          id="form-profile" 
+          method="post" 
+          action="/profile">
           <fieldset>
             <legend>Dados do perfil</legend>
             <div class="separator light"></div>
@@ -46,7 +51,11 @@
             <div class="input-group">
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" value="<%= profile.name %>" />
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  value="<%= profile.name %>" />
               </div>
 
               <div class="input-wrapper">
@@ -74,7 +83,7 @@
                   id="monthly-budget" 
                   name="monthly-budget" 
                   placeholder="R$"
-                  value = "<%= profile["monthly-budget"] %>" />
+                  value="<%= profile["monthly-budget"] %>"/>
               </div>
 
               <div class="input-wrapper">
@@ -84,7 +93,7 @@
                   type="number"
                   id="hours-per-day" 
                   name="hours-per-day"
-                  value = "<%= profile["hours-per-day"] %>" />
+                  value="<%= profile["hours-per-day"] %>" />
               </div>
             </div>
 
@@ -96,7 +105,7 @@
                   type="number"
                   id="days-per-week" 
                   name="days-per-week"
-                  value = "<%= profile["days-per-week"] %>" />
+                  value="<%= profile["days-per-week"] %>" />
               </div>
 
               <div class="input-wrapper">
@@ -106,7 +115,7 @@
                   type="number" 
                   id="vacation-per-year" 
                   name="vacation-per-year"
-                  value = "<%= profile["vacation-per-year"] %>" />
+                  value="<%= profile["vacation-per-year"] %>" />
               </div>
             </div>
           </fieldset>

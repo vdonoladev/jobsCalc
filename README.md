@@ -1,7 +1,6 @@
 # 🧮 jobsCalc
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-desenvolvido-green" alt="status" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
 </p>
 

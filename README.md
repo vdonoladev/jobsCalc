@@ -1,9 +1,5 @@
 # 🧮 jobsCalc
 
-<p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
-</p>
-
 ## 📖 Sobre
 
 O **jobsCalc** é um aplicativo simples e funcional feito pra quem vive de **freelas** e quer parar de cobrar “de cabeça”.

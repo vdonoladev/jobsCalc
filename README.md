@@ -78,11 +78,7 @@ Esse projeto foi desenvolvido com:
 
 ## 💻 Preview
 
-Exemplo:
-
-```md
 ![Preview do jobsCalc](./public/images/preview.png)
-```
 
 ---
 
